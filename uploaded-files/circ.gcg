@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CircuitGroup Version="1.2">
+  <Circuit>
+    <Gates>
+      <Gate Type="UserInput" Name="1" ID="1">
+        <Point X="451.23132969034612" Y="276.85063752276875" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="a" ID="2">
+        <Point X="942.938069216759" Y="265.69398907103829" Angle="0" />
+      </Gate>
+      <Gate Type="And" Name="And" ID="3" NumInputs="2">
+        <Point X="693.68488160291531" Y="353.37158469945444" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="b" ID="4">
+        <Point X="896" Y="352" Angle="0" />
+      </Gate>
+      <Gate Type="UserInput" Name="2" ID="5">
+        <Point X="448" Y="448" Angle="0" />
+      </Gate>
+      <Gate Type="UserInput" Name="0" ID="6">
+        <Point X="448" Y="160" Angle="0" />
+      </Gate>
+      <Gate Type="Or" Name="Or" ID="7" NumInputs="2">
+        <Point X="576" Y="192" Angle="0" />
+      </Gate>
+      <Gate Type="And" Name="And" ID="8" NumInputs="2">
+        <Point X="757" Y="156" Angle="0" />
+      </Gate>
+    </Gates>
+    <Wires>
+      <Wire>
+        <From ID="8" Port="0" />
+        <To ID="2" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="5" Port="0" />
+        <To ID="3" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="1" Port="0" />
+        <To ID="3" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="3" Port="0" />
+        <To ID="4" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="1" Port="0" />
+        <To ID="7" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="6" Port="0" />
+        <To ID="7" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="3" Port="0" />
+        <To ID="8" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="7" Port="0" />
+        <To ID="8" Port="1" />
+      </Wire>
+    </Wires>
+  </Circuit>
+</CircuitGroup>

@@ -1,0 +1,34 @@
+Absolutely latest and revolutionary idea:
+
+Refresh pages/back clicking taken care of
+minimum wastage (no wastage if user takes full 1 min simulation) of server time!!
+less waiting time for users!
+
+TODO:
+UPLOAD AND ENQUEUE AND WAIT ARE ALL WORKING PERFECTLY
+JUST TO MAKE SURE THAT SIMULATE AND SIMULATE-EXEC WORK!! :)
+
+Problem:
+Same user cant update twice as of now :( Redirects to already-enqueued page
+Solution:
+Now he is virtually dequeued. Because when a person is enqueued, he is checked if time_out>cur_time for any entry of that user. If yes. redirects to already enqueued page
+Similarly, while wait.php, if no entry found such that time_out>cur_time, dies giving error that you are not in queue.
+
+TODO:
+	JSP:
+	Take time:
+
+	On simulate page, ensure redirected and it is his proper time slot. One should not be able to go to redirect page without going through the wait.php page or else it will work by typing in address bar.
+	
+	Also, on simulate page, ensure not more than 1 min stay
+	
+	
+	Optional:
+	Optional Dequeue
+	
+	Done stuff to be linked:
+	is-user-valid.php is written, now link with gores module (require it)
+	
+	
+	BOLD BOLD
+	Edit is-user-valid to ensure it works

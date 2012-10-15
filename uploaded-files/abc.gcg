@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CircuitGroup Version="1.2">
+  <Circuit>
+    <Gates>
+      <Gate Type="UserInput" Name="0" ID="1">
+        <Point X="224" Y="160" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="A" ID="2">
+        <Point X="800" Y="288" Angle="0" />
+      </Gate>
+    </Gates>
+    <Wires>
+      <Wire>
+        <From ID="1" Port="0" />
+        <To ID="2" Port="0" />
+      </Wire>
+    </Wires>
+  </Circuit>
+</CircuitGroup>
